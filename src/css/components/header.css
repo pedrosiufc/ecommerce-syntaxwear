@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 20px;
+    padding: 0.225rem 1.25rem;
     background-color: #ffffff;
 }
 
@@ -29,7 +29,7 @@
 }
 .nav-center a:hover, 
 .nav-right a:hover{
-    color: #7c3aed;
+    color: #333333;
 }
 
 .nav-right ul{
