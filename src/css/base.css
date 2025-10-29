@@ -1,5 +1,32 @@
 body{
     font-family: var(--fonte-principal);
     color: #333333;
-    background-color: black;
 }  
+
+.btn{
+    font-size: 1.25rem;
+    width: 161px;
+    height: 48px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 400px;
+    padding: 10px 20px;
+    transition: background-color 0.3s border 0.3s;
+}
+.btn:hover{
+    background-color: blueviolet;
+    color: white;
+    border-color: blueviolet;
+}
+
+.btn-outline{
+    background-color: transparent;
+    border: 2px solid white;  
+    line-height: 23px;  
+}
+
+.btn-filled{
+    background-color: white;
+    color: blueviolet;
+}
+
