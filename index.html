@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/variables.css">
     <link rel="stylesheet" href="./src/css/base.css">
-    <link rel="stylesheet" href="./src/css/layout.css">
     <link rel="stylesheet" href="./src/css/components/header.css">
     <link rel="stylesheet" href="./src/css/components/hero.css">
     <link rel="stylesheet" href="./src/css/components/product-category.css">
@@ -27,34 +26,43 @@
                 <img src="./src/imagens/logo/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online">
             </a>
         </h1>
-        <nav class="nav-center" aria-label="Categorias Principais">
-            <!-- fazendo com ajuda do emmmet sintaxe ul>li*3 -->
-            <ul>
-                <li><a href="#">Masculino</a></li>
-                <li><a href="#">Feminino</a></li>
-                <li><a href="#">Outlet</a></li>
-            </ul>
-        </nav>
-        <nav class="nav-right">
-            <ul>
-                <li><a href="#">Nossas Lojas</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li class="nav-icon">
-                    <a href="#" aria-label="Minha Conta">
-                        <img src="./src/imagens/icons/user.svg" alt="Ícone de Usuário">
-                    </a>
-                </li>
-                <li class="nav-icon">
-                    <a href="#" aria-label="Ajuda">
-                        <img src="./src/imagens/icons/help.svg" alt="Ícone de Ajuda">
-                    </a>
-                </li>
-                <li class="nav-icon">
-                    <a href="#" aria-label="Carrinho de Compras">
-                        <img src="./src/imagens/icons/carrinho.svg" alt="Ícone de Carrinho de Compras">
-                    </a>
-                </li>
-            </ul>
+
+        <input type="checkbox" class="menu-toggle" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <img src="./src/imagens/icons/hamburguer.svg" alt="menu-mobile">
+        </label>
+
+        <nav class="nav-container">
+            <nav class="nav-center" aria-label="Categorias Principais">
+                <!-- fazendo com ajuda do emmmet sintaxe ul>li*3 -->
+                <ul>
+                    <li><a href="#">Masculino</a></li>
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#">Outlet</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-right">
+                <ul>
+                    <li><a href="#">Nossas Lojas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li class="nav-icon">
+                        <a href="#" aria-label="Minha Conta">
+                            <img src="./src/imagens/icons/user.svg" alt="Ícone de Usuário">
+                        </a>
+                    </li>
+                    <li class="nav-icon">
+                        <a href="#" aria-label="Ajuda">
+                            <img src="./src/imagens/icons/help.svg" alt="Ícone de Ajuda">
+                        </a>
+                    </li>
+                    <li class="nav-icon">
+                        <a href="#" aria-label="Carrinho de Compras">
+                            <img src="./src/imagens/icons/carrinho.svg" alt="Ícone de Carrinho de Compras">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </nav>
     </header>
 

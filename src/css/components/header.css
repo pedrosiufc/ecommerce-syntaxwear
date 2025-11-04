@@ -1,10 +1,9 @@
-  /*header.css*/
-.header{
+/*header.css*/
+.header {
     position: fixed;
     top: 60px;
     left: 50%;
     transform: translate(-50%);
-    /* width: calc(100% - 210px); */
     max-width: 1320px;
     width: 100%;
     border-radius: 15px;
@@ -16,40 +15,107 @@
     background-color: #ffffff;
 }
 
-.logo img{
+.logo img {
     height: 48px;
 }
 
-.nav-center ul{
+.nav-center ul {
     display: flex;
     gap: 2.5rem;
 }
 
-.nav-center a, 
-.nav-right a{
+.nav-center a,
+.nav-right a {
     font-size: 1.25rem;
 }
-.nav-center a:hover, 
-.nav-right a:hover{
+
+.nav-center a:hover,
+.nav-right a:hover {
     color: #333333;
 }
 
-.nav-right ul{
+.nav-right ul {
     display: flex;
     gap: 2.5rem;
     align-items: center;
 }
 
-.nav-right ul a{
+.nav-right ul a {
     display: flex;
     gap: 0.5rem;
     align-items: center;
 }
 
-.nav-right img{
+.nav-right img {
     height: auto;
 }
 
-.nav-right a:hover img{
+.nav-right a:hover img {
     opacity: 0.7;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+    .header {
+        width: calc(100% - 40px);
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-container {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 40px;
+        right: -180px;
+        width: 180px;
+        height: auto;
+        padding: 20px;
+        background-color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: right 0.3s ease, visibility 0s linear 0.3s, opacity 0.3s ease;
+    }
+
+    .menu-toggle:checked ~ .nav-container {
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: right 0.3s ease, visibility 0s linear 0s, opacity 0.3s ease;
+    }
+
+    .nav-center ul,
+    .nav-right ul {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav-center a,
+    .nav-right a {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eee;
+        width: auto;
+        display: block;
+    }
 }
