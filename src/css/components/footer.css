@@ -80,11 +80,16 @@
     padding: 20px 0;
 }
 
-@media (max-width: 100px){
+
+@media (max-width: 768px){
     .footer-content{
         flex-direction: column;
         gap: 2rem;
         padding: 2rem 1rem;
+    }
+
+    .newsletter-form input {
+        width: 100%;
     }
 
     .footer-nav ul{
